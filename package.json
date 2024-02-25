@@ -5,26 +5,35 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js -r dotenv/config",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "lint": "eslint . --ext .js --cache --cache-strategy content",
     "format": "prettier . --write --ignore-unknown --cache --cache-strategy content",
     "prepare": "husky install"
   },
+  /* apenas para eu poder fazer um backup de emergencia
   "lint-staged": {
     "**/*.{js,json}": [
       "eslint",
       "prettier --write --ignore-unknown"
     ]
   },
+  */
   "dependencies": {
+    "@prisma/client": "^5.8.0",
+    "compression": "^1.7.4",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.0.4",
+    "uuidv4": "^6.2.13",
+    "validator": "^13.11.0"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
+    "nodemon": "^3.0.2",
     "prettier": "3.2.2"
   },
   "author": "HarukaYamamoto0 <haruharukayamamotodev@gmail.com> (https://github.com/HarukaYamamoto0)",

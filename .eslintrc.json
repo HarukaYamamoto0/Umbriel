@@ -20,7 +20,7 @@
     "max-len": [
       "error",
       {
-        "code": 120,
+        "code": 80,
         "tabWidth": 2,
         "ignoreUrls": true,
         "ignoreRegExpLiterals": true
